@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 
 def main():
-  char_index = dict(zip(
-      [i for i in xrange(1, 27)],
-      [c for c in xrange(ord('A'), ord('Z') + 1)]
-  ))
+  char_index = dict(enumerate([c for c in xrange(ord('A'), ord('Z') + 1)]))
 
   assert letter_int('A') == 1
   assert letter_int('CV') == 100
